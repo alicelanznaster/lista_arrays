@@ -7,9 +7,21 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt(`Insira um número.`));
+    const numero2 = Number(prompt(`Insira outro número.`));
 
     //PROCESSAMENTO
+    let listaNumero = [ ];
+
+    //Ordenação Manual
+    if (numero1 < numero2) {
+        listaNumero  = [numero1, numero2];
+    } else {
+        listaNumero = [numero2, numero1];
+    }
+
+    //SAÍDA
+    alert(listaNumero.join(" - "));
 
 
     //SAÍDA
