@@ -9,10 +9,17 @@
     */
 
     //ENTRADA
-
+    let palavra = prompt(`Digite UMA palavra.`);
+    let letra = prompt(`Digite a letra que deseja encontrar em: ${palavra}.`)
 
     //PROCESSAMENTO
-
+    let procura = palavra.search(letra);
+    
+    if (procura >= 0) {
+        alert(`A letra foi encontrada e esta na posicão ${procura + 1}.`)
+     } else {
+        alert(`A letra não foi encontrada!`)
+     }
 
     //SAÍDA
 
